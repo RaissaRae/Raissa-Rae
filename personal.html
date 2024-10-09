@@ -36,6 +36,13 @@
 
         /*small and medium screens*/
 
+        @media (max-width: 650px) {
+            .img-fluid {
+                height: 300px;
+            }
+
+        }
+
         nav {
             background-color: #418A9A;
 
@@ -52,9 +59,6 @@
 
         }
 
-        .img-fluid {
-            height: 300px;
-        }
 
         #subheading {
             font-family: "Roboto", sans-serif;
@@ -130,7 +134,9 @@
             color: #418A9A;
         }
 
+        @media (min-width: 960px){
 
+        }
 
 
 
@@ -241,21 +247,26 @@
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-6 d-flex justify-content-center mb-3">
+            <div class="col-md-6 col-lg-4 d-flex justify-content-center mb-3">
                 <div class="card" style="width: 18rem;">
                     <img src="images/pexels-skitterphoto-633881.jpg" class="card-img-top" alt="cheese in mousetrap">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title text-center">IoT</h5>
                         <p class="card-text">In my first year at Thomas More, during the second semester, I took an
                             Internet of Things (IoT) class.</p>
-                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#iot">
+                        <div class="d-flex justify-content-center mt-auto">
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#iot">
+                                Read More
+                            </button>
+                        </div>
+                        <!--<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#iot">
                             Read More
-                        </button>
+                        </button>-->
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 d-flex justify-content-center mb-3">
+            <div class="col-md-6 col-lg-4 d-flex justify-content-center mb-3">
                 <div class="card" style="width: 18rem;">
                     <img src="images/pexels-canvastudio-3153207.jpg" class="card-img-top"
                          alt="people chatting in group">
@@ -263,23 +274,34 @@
                         <h5 class="card-title text-center">Requirement Analysis</h5>
                         <p class="card-text">For Requirement Analysis (this was a second year, semester one course) , we
                             had to work in a team and create a User Requirements Specifications report.</p>
-                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                        <div class="d-flex justify-content-center mt-auto">
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#iot">
+                                Read More
+                            </button>
+                        </div>
+                        <!--<button type="button" class="btn btn-dark" data-bs-toggle="modal"
                                 data-bs-target="#requirement">
                             Read More
-                        </button>
+                        </button>-->
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 d-flex justify-content-center mb-3">
+            <div class="col-md-6 col-lg-4 d-flex justify-content-center mb-3">
                 <div class="card" style="width: 18rem;">
                     <img src="images/pexels-brunogobofoto-3854816.jpg" class="card-img-top"
                          alt="hand writing on sticky notes">
                     <div class="card-body">
-                        <p class="card-text">Project PHP is a second year, second semester course.</p>
-                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#php">
+                        <h5 class="card-title text-center">Project PHP</h5>
+                        <p class="card-text">Project PHP is a second year, second semester course. It was a team project working with an actual client.</p>
+                        <div class="d-flex justify-content-center mt-auto">
+                            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#iot">
+                                Read More
+                            </button>
+                        </div>
+                        <!--<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#php">
                             Read More
-                        </button>
+                        </button>-->
                     </div>
                 </div>
             </div>
@@ -356,7 +378,7 @@
                     <p> We worked with a client which ended being Thomas More. We had to create a competitions platform
                         where all the competitions could be hosted by teachers, external companies and even students.
 
-                        This was a great project, I enjoyed working with my teammates and we worked well together. One
+                        This was a great project, I enjoyed working with my teammates, and we worked well together. One
                         thing that was drilled into us when working with clients is, to always listen to the client and
                         let them know if something might not be possible and how long things could take.
                     </p>
@@ -404,7 +426,7 @@
                 <div class="modal-body">
 
                     <p> This was a course that worked hand in hand with Web Application Development with PHP and
-                        Requirements Analysis. We were given a report which had been complied by another group and we
+                        Requirements Analysis. We were given a report which had been complied by another group, and we
                         had to make appropriate changes after speaking to the client.
 
                         This time, the client was Laurien Stroobants. We had to create an application for people with
