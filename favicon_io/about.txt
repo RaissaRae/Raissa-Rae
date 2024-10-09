@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Rammetto One
+- Font Author: Copyright 2011 The Rammetto Project Authors (https://github.com/googlefonts/RammettoFont), with Reserved Font Name Rammetto.
+- Font Source: https://fonts.gstatic.com/s/rammettoone/v19/LhWiMV3HOfMbMetJG3lQDpp9Mvuciu-_SQ.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
