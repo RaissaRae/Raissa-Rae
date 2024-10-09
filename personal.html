@@ -7,8 +7,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
-    <style>
+
+<!--    main font-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Rammetto+One&family=Spicy+Rice&family=Ultra&display=swap" rel="stylesheet">
+
+    <!--<style>
         nav {
             font-family: 'Poppins', sans-serif;
             background-color: #040403;
@@ -16,6 +24,8 @@
             height:80px;
             font-size: 20px;
         }
+
+
 
         .navbar-toggler-icon,
         .navbar-toggler{
@@ -31,6 +41,17 @@
             color: white;
         }
 
+        .icons-socials {
+            font-size: 15px;
+
+        }
+
+        .icons-socials a {
+            margin-right: 15px;
+        }
+
+
+
         #subheading {
             font-family: 'Poppins', sans-serif;
             font-size: 20px;
@@ -39,7 +60,7 @@
 
         section p{
             font-family: 'Roboto', sans-serif;
-            padding: 0px 30px 30px 30px;
+            padding: 0 30px 5px 30px;
             margin: 0;
 
         }
@@ -50,6 +71,10 @@
 
         .fa-envelope {
             color: #9a4141;
+        }
+
+        .fa-github{
+            color: black;
         }
 
         .navbar-nav .nav-link {
@@ -78,12 +103,38 @@
             font-size: 20px;
         }
 
-        #projects h5,
-        #projects p{
-            color: black;
+
+        #projects h3 {
+            font-family: "Rammetto One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
         }
 
-    </style>
+        .slide_projects img{
+
+            width: 500px;
+            height: 300px;
+        }
+
+
+    /*    card 1 - iot*/
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+
+
+
+
+
+
+    </style>-->
 
 
     <title>Raissa Rae</title>
@@ -101,8 +152,12 @@
             <div class="navbar-nav mx-auto">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                 <a class="nav-link" href="#about-me">About Me</a>
-<!--                <a class="nav-link" href="#internship">Internship</a>-->
                 <a class="nav-link" href="#projects">Achievements & Projects</a>
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#contact">Contact</a>
+
+<!--                <a class="nav-link" href="#internship">Internship</a>-->
+
 
             </div>
         </div>
@@ -129,7 +184,8 @@
                     I have always been passionate about crafting, especially crocheting, and I am currently looking
                     forward to
                     diving into knitting and sewing once I finish this degree. However, my journey took an unexpected
-                    turn when I discovered coding.
+                    turn when I discovered coding. I am currently stuyding towards a Professional Bachelor in Applied Computer Science
+                    at Thomas More (campus Geel) - I am in my final year.
                     <br>
                     Initially, I did not know too much about coding but once I started exploring it, I fell in love with
                     everything about it.
@@ -148,11 +204,7 @@
                     details below.
                     I look forward to sharing more of my journey with you!
                 </p>
-                <div>
-                    <a href="https://www.linkedin.com/in/raissa-rae-makonga/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="mailto:raissa.makonga12@gmail.com"><i class="fa-solid fa-envelope"></i></a>
 
-                </div>
 
                 <div>
                     <a href="cv/Raissa%20Makonga%20CV.pdf" download="Raissa_Makonga_CV.pdf">
@@ -166,162 +218,254 @@
     </div>
 </section>
 
-<!--<section id="internship">
-    <p>
-        <strong>INTERNSHIP</strong>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur beatae culpa deserunt eos ex facere fugiat incidunt laudantium minima minus quaerat quia quibusdam quisquam reiciendis repudiandae, rerum saepe voluptatum.
-    </p>
-</section>-->
+
 
 <section id="projects">
+    <h3 class="text-center">Projects</h3>
 
-    <p>
-        <strong>projects</strong>
-    </p>
-
-
-    <div class="container mt-5">
+    <div class="container">
         <div class="row">
-
-            <!-- Card 1 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="images/PHP_home.png" class="card-img-top" alt="Card Image 1">
+            <div class="col-md-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/pexels-skitterphoto-633881.jpg" class="card-img-top" alt="cheese in mousetrap">
                     <div class="card-body">
-                        <h5 class="card-title">Project PHP</h5>
-                        <p class="card-text">Project PHP is a second year, second semester course.  This was a course that worked hand in hand with Web Application Development with PHP and Requirements Analysis.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Read More</button>
+                        <h5 class="card-title text-center">IoT</h5>
+                        <p class="card-text">In my first year at Thomas More, during the second semester, I took an Internet of Things (IoT) class.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#iot">
+                            Read More
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Card Image 2">
+            <div class="col-md-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/pexels-canvastudio-3153207.jpg" class="card-img-top" alt="people chatting in group">
                     <div class="card-body">
-                        <h5 class="card-title">Card Title 2</h5>
-                        <p class="card-text">Some quick example text to build on the card title.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Read More</button>
+                        <h5 class="card-title text-center">Requirement Analysis</h5>
+                        <p class="card-text">For Requirement Analysis (this was a second year, semester one course) , we had to work in a team and create a User Requirements Specifications report.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#requirement">
+                            Read More
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 3 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Card Image 3">
+            <div class="col-md-6">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/pexels-brunogobofoto-3854816.jpg" class="card-img-top" alt="hand writing on sticky notes">
                     <div class="card-body">
-                        <h5 class="card-title">Card Title 3</h5>
-                        <p class="card-text">Some quick example text to build on the card title.</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Read More</button>
+                        <p class="card-text">Project PHP is a second year, second semester course.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#php">
+                            Read More
+                        </button>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
-    <!-- Modal 1 -->
-    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+<!--    IOT modal-->
+
+    <div class="modal fade" id="iot" tabindex="-1" aria-labelledby="iotModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modal1Label">Project PHP</h5>
+                    <h1 class="modal-title fs-5" id="iotModalLabel">IoT - 1st year</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
 
-                    <!-- Grid of Images -->
-                    <!--                        <div class="row mb-4">-->
-                    <!--                            <div class="col-6">-->
-                    <!--                                <img src="images/user-admin.png" class="img-fluid img-thumbnail" alt="Image 1" data-bs-toggle="modal" data-bs-target="#imageModal1"-->
-                    <!--                                     -->
-                    <!--                                >-->
-                    <!--                            </div>-->
-                    <!--                            <div class="col-6">-->
-                    <!--                                <img src="https://via.placeholder.com/200x150" class="img-fluid img-thumbnail" alt="Image 2" data-bs-toggle="modal" data-bs-target="#imageModal2">-->
-                    <!--                            </div>-->
+                    <p> Our permanent evaluation was to create a mousetrap using the components that we learnt about. The components were a Raspberry Pi, a stepper motor, an ultrasonic measurement, LCD and we also made used of uBeac. Despite never taking Physics in high school, I really enjoyed this class and the project.
 
-                    <!--                        </div>-->
+                        The stepper motor was used to close the door once the mouse was detected, the ultrasonic measurement component was used to show how far the mouse was, we used the LCD to display the amount of the times the trap was closed, the current date and time.</p>
+                </div>
+                <div>
+                    <div id="carouseliot" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/iot_1.png" class="d-block w-100" alt="iot mousetrap side view">
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="images/iot_2.png" class="d-block w-100" alt="iot mouse trap birds eye view">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/iot_3.png" class="d-block w-100" alt="iot inside view">
+                            </div>
 
-                    Project PHP is a second year, second semester course.  This was a course that worked hand in hand with Web Application Development with PHP and Requirements Analysis. We were given a report which had been complied by another group and we had to make appropriate changes after speaking to the client.
-
-                    This time, the client was Laurien Stroobants. We had to create an application for people with memory problems, who has an informal carer who would provide support to the primary user. We had to integrate different users other than the primary user (patient), we had to have carers and admins in order for the app to be running.
-                    I was document lead so besides handling all the paperwork, I had to create sample data for the database, I had to create the profile page for each user, and the guest comment page for the guests who had could add messages for the primary user.
-
-                    <hr>
-
-                    <a href="https://www.lsta.meminder.be/" target="_blank" class="text-center">Go to the website</a>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouseliot" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouseliot" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="https://youtu.be/rfWOx5mEeh0" target="_blank">
+                        <button type="button" class="btn btn-secondary">Visit the web application</button>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Enlarge Image Modals -->
-    <!-- Image Modal 1 -->
-    <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModal1Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img src="images/user-admin.png" class="img-fluid" alt="Enlarged Image 1">
-                </div>
-            </div>
-        </div>
-    </div>
+<!--    RA modal-->
 
-    <!-- Image Modal 2 -->
-    <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModal2Label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img src="https://via.placeholder.com/600x400" class="img-fluid" alt="Enlarged Image 2">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- Modal 2 -->
-    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal fade" id="requirement" tabindex="-1" aria-labelledby="requirementModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modal2Label">Card Title 2 - More Info</h5>
+                    <h1 class="modal-title fs-5" id="RA">Requirement Analysis</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Detailed information about Card 2 goes here. You can add more text, images, or any content you want.
+
+                    <p> We worked with a client which ended being Thomas More. We had to create a competitions platform where all of the competitions could be hosted by teachers, external companies and even students.
+
+                        This was a great project, I enjoyed working with my team mates and we worked well together. One thing that was drilled into us when working with clients is, to always listen to the client and let them know if something might not be possible and how long things could take.
+                    </p>
+                </div>
+                <div>
+                    <div id="carouselRA" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/RA_1.png" class="d-block w-100" alt="RA competition details">
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="images/RA_2.png" class="d-block w-100" alt="RA changing of details">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselRA" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselRA" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal 3 -->
-    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+
+    <!--    PHP modal-->
+    <div class="modal fade" id="php" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modal3Label">Card Title 3 - More Info</h5>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Project PHP - 2nd year</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Detailed information about Card 3 goes here. You can add more text, images, or any content you want.
+
+                    <p> This was a course that worked hand in hand with Web Application Development with PHP and Requirements Analysis. We were given a report which had been complied by another group and we had to make appropriate changes after speaking to the client.
+
+                        This time, the client was Laurien Stroobants. We had to create an application for people with memory problems, who has an informal carer who would provide support to the primary user. We had to integrate different users other than the primary user (patient), we had to have carers and admins in order for the app to be running.
+
+                        I was document lead so besides handling all the paperwork, I had to create sample data for the database, I had to create the profile page for each user, and the guest comment page for the guests who had could add messages for the primary user.</p>
+                </div>
+                <div>
+                    <div id="carouselPHP" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/meminder_home.png" class="d-block w-100" alt="meminder home">
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="images/meminder_profile_patient.png" class="d-block w-100" alt="meminder profile patient">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/meminder_diary_patient.png" class="d-block w-100" alt="meminder diary patient">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/meminder_settings_patient.png" class="d-block w-100" alt="meminder settings patient">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPHP" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselPHP" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="https://www.lsta.meminder.be/" target="_blank">
+                        <button type="button" class="btn btn-secondary">Visit the web application</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+
+    <h3>Skills</h3>
+
+    <div>
+
+        <p class="d-inline-flex gap-1">
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#programming_lang" role="button" aria-expanded="false" aria-controls="programming_lang">Programming Languages</a>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#web_development" aria-expanded="false" aria-controls="web_development">Web Development</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+        </p>
+        <div class="row">
+            <div class="col">
+                <div class="collapse multi-collapse" id="programming_lang">
+                    <div class="card card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">Python</li>
+                            <li class="list-group-item">Java</li>
+                            <li class="list-group-item">.NET</li>
+                            <li class="list-group-item">PHP</li>
+                            <li class="list-group-item">C#</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="collapse multi-collapse" id="web_development">
+                    <div class="card card-body">
+
+                        <ul class="list-group">
+                            <li class="list-group-item">HTML</li>
+                            <li class="list-group-item">CSS</li>
+                            <li class="list-group-item">JavaScript</li>
+                            <li class="list-group-item">Bootstrap</li>
+                            <li class="list-group-item">Tailwind</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+
+</section>
+
+<section id="contact">
+
+    <h4>Contact</h4>
+    <div class="icons-socials">
+        <a href="https://www.linkedin.com/in/raissa-rae-makonga/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:raissa.makonga12@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/RaissaRae" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
 </section>
 
 
@@ -329,6 +473,18 @@
 
 
 
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+    const myModal = document.getElementById('myModal')
+    const myInput = document.getElementById('myInput')
+
+    myModal.addEventListener('shown.bs.modal', () => {
+        myInput.focus()
+    })
+</script>
 </body>
 </html>
