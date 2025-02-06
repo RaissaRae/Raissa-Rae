@@ -1,116 +1,162 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Rammetto+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
-
-
-/*small and medium screens*/
-
-@media (max-width: 650px) {
-    .img-fluid {
-        height: 300px;
-    }
-
-}
-
-nav {
-    background-color: #418A9A;
-
+.navbar-brand {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
 }
 
 .nav-link {
-    color: white;
-}
-
-.navbar-brand {
-    font-family: "Rammetto One", sans-serif;
-    font-size: 30px;
-    color: white;
-
-}
-
-
-#subheading {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-style: normal;
+    color: #666666 !important;
 }
 
-p{
-    font-family: "Lora", serif;
+.nav-link:hover {
+    color: #000 !important;
 }
 
-#cv_button button {
-    background-color: black;
-    color: white;
+.custom-btn {
+    background-color: #000 !important;
+    color: white !important;
+    padding: 8px 24px !important;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
 
-#cv_button button:hover {
-    background-color: #418A9A ;
+.custom-btn:hover {
+    background-color: #DD6031 !important;
+    color: white !important;
 }
 
-section {
-    padding: 10px 10px 10px 10px;
+#Raissaimg\ {
+    height: 500px;
 }
 
-.w-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
 }
-.wave {
-    position: relative;
-    font-size: 40px;
-}
-.wave span {
-    font-family: "Rammetto One", sans-serif;
-    position: relative;
-    display: inline-block;
+
+.icons-socials i {
+    font-size: 2rem;
     color: black;
-    text-transform: uppercase;
-    animation: wave 1s infinite;
-    animation-delay: calc(.1s * var(--i));
-
-}
-@keyframes wave {
-    0%,40%,100% {
-        transform: translateY(0)
-    }
-    20% {
-        transform: translateY(-20px)
-    }
 }
 
-#skills li:hover{
-    background-color: #9A4141 ;
+.icons-socials i:hover{
+    color: #DD6031;
+}
+
+.icons-socials a {
+    margin: 0 10px; /* Adjust space between icons */
+}
+
+.projects-header {
+    background-color: #f4f4f4;
+}
+.projects-header h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+}
+
+.projects-header p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-body p {
+    font-size: 0.95rem;
+}
+
+.skill-card {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px); /* Move the card up */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.skill-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover img {
+    transform: scale(1.2); /* Scale up image on hover */
+}
+
+.skill-card .card-body {
+    padding: 10px 0;
+}
+
+.skill-card .card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #171717;
+
+}
+
+footer .icons-socials i {
+    font-size: 2rem;
+    color: #ECE4B7;
+}
+footer .icons-socials i:hover{
+    color: #DD6031;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+}
+
+#projects{
+    background-color: #311E10;
+    color: white;
+    margin-top: 50px;
+    padding-bottom: 15px;
+}
+
+#skills {
+    background-color: #311E10;
     color: white;
 }
 
-
-
-#contact {
-    background-color: black;
-    color: white;
-}
-
-.icons-socials {
-    font-size: 19px;
-}
-.fa-github {
-    color: white;
-}
-
-.fa-envelope {
-    color: #418A9A;
-}
-
-@media (min-width: 960px){
+#projects button {
+    background-color: #EABE7C;
 
 }
+
+#projects button:hover {
+    background-color: #D9DD92;
+    color: black;
+}
+
