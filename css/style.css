@@ -160,3 +160,14 @@ h1 {
     color: black;
 }
 
+a {
+    text-decoration: none;
+}
+
+.images_iot {
+    height: 10px;
+}
+
+.mousetrap-text{
+    line-height: 40px;
+}
