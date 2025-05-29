@@ -1,25 +1,92 @@
+.navbar-brand {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.nav-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #666666 !important;
+
+}
+
+    a.nav-link {
+        text-align: center;
+    }
 
 
+    .nav-link:hover {
+        color: #000 !important;
+    }
 
-/*.navbar-brand {*/
-/*    font-family: 'Inter', sans-serif;*/
-/*    font-weight: 900;*/
-/*    font-size: 24px;*/
 
+.custom-btn {
+    background-color: #000 !important;
+    color: white !important;
+    padding: 8px 24px !important;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #DD6031 !important;
+    color: white !important;
+}
+
+
+h3 span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    color: #014421;
+}
+
+.cards-intro a{
+    text-decoration: none;
+    color: black;
+}
+
+.cards-intro a:hover{
+    color: #3e2723;
+}
+
+#Raissaimg {
+    display: none;
+}
+
+#about-me {
+    background-color: #014421;
+    color: #f5f5dc;
+}
+
+#about-me h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    padding: 20px;
+}
+
+#about-me p {
+    line-height: 25px;
+}
+
+#about-me ul{
+    list-style-position: inside;
+}
+
+.cv-button{
+    background-color: #267a4f;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+.cv-button:hover{
+    background-color: #f5f5dc;
+    color: black;
+}
 /*}*/
 
-/*.custom-btn {*/
-/*    background-color: #000 !important;*/
-/*    color: white !important;*/
-/*    padding: 8px 24px !important;*/
-/*    border-radius: 8px;*/
-/*    transition: background-color 0.3s ease;*/
-/*}*/
 
-/*.custom-btn:hover {*/
-/*    background-color: #DD6031 !important;*/
-/*    color: white !important;*/
-/*}*/
 
 /*footer{*/
 /*    background-color: #f4ebdd;*/
