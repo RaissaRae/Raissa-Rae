@@ -84,7 +84,27 @@ h3 span {
     background-color: #f5f5dc;
     color: black;
 }
-/*}*/
+
+
+#internship p {
+    line-height: 35px;
+}
+
+.intern-heading {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+#internship button {
+    background-color:#800020 ;
+    color: white;
+}
+
+#internship button:hover {
+    background-color: #ffc0cb;
+    color: #800020;
+}
 
 
 
