@@ -59,7 +59,7 @@ h3 span {
     color: #f5f5dc;
 }
 
-#about-me h2 {
+#about-me h2, #projects h1 {
     font-family: 'Inter', sans-serif;
     font-weight: 800;
     padding: 20px;
@@ -104,6 +104,11 @@ h3 span {
 #internship button:hover {
     background-color: #ffc0cb;
     color: #800020;
+}
+
+#projects {
+    background-color: #3e2723;
+    color: #f4ebd0;
 }
 
 
