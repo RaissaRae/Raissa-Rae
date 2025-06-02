@@ -46,6 +46,16 @@ h3 span {
     color: black;
 }
 
+.cards-intro .card {
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.cards-intro .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
 .cards-intro a:hover{
     color: #3e2723;
 }
@@ -168,6 +178,18 @@ h3 span {
     padding: 2rem;
 }
 
+footer {
+    background-color: #171717;
+}
+
+footer .icons-socials i {
+    font-size: 1rem;
+    color: #3E2723;
+}
+
+footer .icons-socials i:hover {
+    color: #DD6031;
+}
 
 @media (max-width: 576px) {
     .skill-card {
@@ -207,15 +229,16 @@ h3 span {
     }
 }
 
-footer {
-    background-color: #171717;
-}
 
-footer .icons-socials i {
-    font-size: 1rem;
-    color: #3E2723;
-}
+@media (min-width: 577px) {
 
-footer .icons-socials i:hover {
-    color: #DD6031;
+    #Raissaimg {
+        display: block;
+        height: auto;
+    }
+
+    #internship {
+        padding-bottom: 30px;
+    }
+
 }
