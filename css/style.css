@@ -59,7 +59,7 @@ h3 span {
     color: #f5f5dc;
 }
 
-#about-me h2, #projects h1 {
+#about-me h2, #projects h1, #skills h1 {
     font-family: 'Inter', sans-serif;
     font-weight: 800;
     padding: 20px;
@@ -72,6 +72,8 @@ h3 span {
 #about-me ul{
     list-style-position: inside;
 }
+
+
 
 .cv-button{
     background-color: #267a4f;
@@ -111,223 +113,109 @@ h3 span {
     color: #f4ebd0;
 }
 
+.skill-card {
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.skill-card img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.skill-card .card-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+}
+
+.category-title {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.category-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(45deg, #800020, #800020);
+    border-radius: 2px;
+}
+
+.category-section {
+    margin-bottom: 3rem;
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 2rem;
+}
 
 
-/*footer{*/
-/*    background-color: #f4ebdd;*/
+@media (max-width: 576px) {
+    .skill-card {
+        padding: 0.75rem;
+    }
 
+    .skill-card img {
+        width: 35px;
+        height: 35px;
+    }
 
-/*}*/
+    .skill-card .card-title {
+        font-size: 0.8rem;
+    }
 
-/*footer .icons-socials i {*/
-/*    font-size: 1rem;*/
-/*    color: #3E2723;*/
-/*}*/
+    .category-section {
+        padding: 1.5rem;
+    }
 
-/*footer .icons-socials i:hover {*/
-/*    color: #DD6031;*/
-/*}*/
+    .category-title {
+        font-size: 1.25rem;
+    }
+}
 
-/*#Raissaimg{*/
-/*    width: 83%;*/
-/*    display: block;*/
-/*    margin: 0 auto;*/
+@media (max-width: 390px) {
+    .skill-card {
+        padding: 0.5rem;
+    }
 
-/*    !*@media screen and  (max-width: 576px) {*!*/
-/*    !*    #Raissaimg {*!*/
-/*    !*        display: none;*!*/
-/*    !*    }*!*/
+    .skill-card img {
+        width: 30px;
+        height: 30px;
+    }
 
-/*    !*    footer {*!*/
-/*    !*        background-color: #171717;*!*/
+    .skill-card .card-title {
+        font-size: 0.75rem;
+    }
+}
 
-/*    !*    }*!*/
+footer {
+    background-color: #171717;
+}
 
-/*    !*    footer .icons-socials i {*!*/
-/*    !*        font-size: 2rem;*!*/
-/*    !*        color: #ECE4B7;*!*/
-/*    !*    }*!*/
-/*    !*    footer .icons-socials i:hover{*!*/
-/*    !*        color: #DD6031;*!*/
-/*    !*    }*!*/
-/*    !*}*!*/
+footer .icons-socials i {
+    font-size: 1rem;
+    color: #3E2723;
+}
 
-
-
-/*    !*!*mobile version *!*!*/
-/*    !*@media screen and  (max-width: 576px) {*!*/
-/*    !*    #whoIamParagraph {*!*/
-/*    !*        padding: 10px;*!*/
-/*    !*    }*!*/
-/*    !*    #Raissaimg{*!*/
-/*    !*        width: 70%;      *!*/
-/*    !*        display: block;*!*/
-/*    !*        margin: 0 auto;*!*/
-/*    !*    }*!*/
-
-
-
-/*.nav-link {*/
-/*    font-family: 'Inter', sans-serif;*/
-/*    font-weight: 400;*/
-/*    color: #666666 !important;*/
-
-/*}*/
-
-/*    a.nav-link {*/
-/*        text-align: center;*/
-/*    }*/
-
-
-/*    .nav-link:hover {*/
-/*        color: #000 !important;*/
-/*    }*/
-/*}*/
-
-
-
-/*!*#Raissaimg {*!*/
-/*!*    height: 450px;*!*/
-/*!*    margin: 12.5px;*!*/
-/*!*}*!*/
-
-/*!*h3{*!*/
-/*!*    font-family: 'Inter', sans-serif;*!*/
-/*!*    font-weight: 900;*!*/
-/*!*    font-size: 24px;*!*/
-/*!*}*!*/
-
-/*!*.icons-socials i {*!*/
-/*!*    font-size: 2rem;*!*/
-/*!*    color: black;*!*/
-/*!*}*!*/
-
-/*!*.icons-socials i:hover{*!*/
-/*!*    color: #DD6031;*!*/
-/*!*}*!*/
-
-/*!*.icons-socials a {*!*/
-/*!*    margin: 0 10px; !* Adjust space between icons *!*!*/
-/*!*}*!*/
-
-/*!*.projects-header {*!*/
-/*!*    background-color: #f4f4f4;*!*/
-/*!*}*!*/
-/*!*.projects-header h2{*!*/
-/*!*    font-family: 'Inter', sans-serif;*!*/
-/*!*    font-weight: 900;*!*/
-/*!*}*!*/
-
-/*!*.projects-header p {*!*/
-/*!*    font-family: 'Inter', sans-serif;*!*/
-/*!*    font-weight: 400;*!*/
-/*!*}*!*/
-
-/*!*.card {*!*/
-/*!*    border-radius: 12px;*!*/
-/*!*    overflow: hidden;*!*/
-/*!*    transition: transform 0.3s, box-shadow 0.3s;*!*/
-/*!*}*!*/
-
-/*!*.card:hover {*!*/
-/*!*    transform: scale(1.05);*!*/
-/*!*    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);*!*/
-/*!*}*!*/
-
-/*!*.card-img-top {*!*/
-/*!*    height: 200px;*!*/
-/*!*    object-fit: cover;*!*/
-/*!*}*!*/
-
-/*!*.card-body h5 {*!*/
-/*!*    font-size: 1.25rem;*!*/
-/*!*    font-weight: bold;*!*/
-/*!*}*!*/
-
-/*!*.card-body p {*!*/
-/*!*    font-size: 0.95rem;*!*/
-/*!*}*!*/
-
-/*!*.skill-card {*!*/
-/*!*    position: relative;*!*/
-/*!*    text-align: center;*!*/
-/*!*    padding: 20px;*!*/
-/*!*    transition: transform 0.3s ease, box-shadow 0.3s ease;*!*/
-/*!*}*!*/
-
-/*!*.skill-card:hover {*!*/
-/*!*    transform: translateY(-10px); !* Move the card up *!*!*/
-/*!*    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); !* Soft shadow *!*!*/
-/*!*}*!*/
-
-/*!*.skill-card img {*!*/
-/*!*    width: 50px;*!*/
-/*!*    height: 50px;*!*/
-/*!*    margin-bottom: 10px;*!*/
-/*!*    transition: transform 0.3s ease;*!*/
-/*!*}*!*/
-
-/*!*.skill-card:hover img {*!*/
-/*!*    transform: scale(1.2); !* Scale up image on hover *!*!*/
-/*!*}*!*/
-
-/*!*.skill-card .card-body {*!*/
-/*!*    padding: 10px 0;*!*/
-/*!*}*!*/
-
-/*!*.skill-card .card-title {*!*/
-/*!*    font-size: 1.1rem;*!*/
-/*!*    font-weight: bold;*!*/
-/*!*}*!*/
-
-/*!*footer {*!*/
-/*!*    background-color: #171717;*!*/
-
-/*!*}*!*/
-
-/*!*footer .icons-socials i {*!*/
-/*!*    font-size: 2rem;*!*/
-/*!*    color: #ECE4B7;*!*/
-/*!*}*!*/
-/*!*footer .icons-socials i:hover{*!*/
-/*!*    color: #DD6031;*!*/
-/*!*}*!*/
-
-/*!*h1 {*!*/
-/*!*    font-family: 'Inter', sans-serif;*!*/
-/*!*    font-weight: 900;*!*/
-/*!*}*!*/
-
-/*!*#projects{*!*/
-/*!*    background-color: #311E10;*!*/
-/*!*    color: white;*!*/
-/*!*    margin-top: 50px;*!*/
-/*!*    padding-bottom: 15px;*!*/
-/*!*}*!*/
-
-/*!*#skills {*!*/
-/*!*    background-color: #311E10;*!*/
-/*!*    color: white;*!*/
-/*!*}*!*/
-
-/*!*#projects button {*!*/
-/*!*    background-color: #EABE7C;*!*/
-
-/*!*}*!*/
-
-/*!*#projects button:hover {*!*/
-/*!*    background-color: #D9DD92;*!*/
-/*!*    color: black;*!*/
-/*!*}*!*/
-
-/*!*a {*!*/
-/*!*    text-decoration: none;*!*/
-/*!*}*!*/
-
-/*!*.images_iot {*!*/
-/*!*    height: 10px;*!*/
-/*!*}*!*/
-
-/*!*.mousetrap-text{*!*/
-/*!*    line-height: 40px;*!*/
-/*!*}*!*/
+footer .icons-socials i:hover {
+    color: #DD6031;
+}
