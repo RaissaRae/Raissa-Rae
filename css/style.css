@@ -1,3 +1,4 @@
+
 .navbar-brand {
     font-family: 'Inter', sans-serif;
     font-weight: 900;
@@ -69,7 +70,7 @@ h3 span {
     color: #f5f5dc;
 }
 
-#about-me h2, #projects h1, #skills h1 {
+#about-me h2, #projects h1, #skills h1, #internship h2 {
     font-family: 'Inter', sans-serif;
     font-weight: 800;
     padding: 20px;
@@ -121,7 +122,23 @@ h3 span {
 #projects {
     background-color: #3e2723;
     color: #f4ebd0;
+    padding-bottom: 15px;
 }
+
+#projects button {
+    background-color: #f4ebd0;
+}
+
+#projects button:hover {
+    background-color: #800020;
+    color: #f4ebd0;
+}
+#projects a {
+    text-decoration: none;
+}
+
+
+
 
 .skill-card {
     height: 100%;
@@ -234,7 +251,9 @@ footer .icons-socials i:hover {
 
     #Raissaimg {
         display: block;
-        height: auto;
+        max-height: 450px;
+        width: auto;
+        object-fit: cover;
     }
 
     #internship {
