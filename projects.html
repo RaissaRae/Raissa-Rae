@@ -61,9 +61,264 @@
     <p class="text-center">These are my favourite projects from my 3-year degree and some personal ones as well.</p>
 </div>
 
-<section>
+<section class="text-center">
+    <div class="container">
+        <div class="filter-buttons">
+            <button type="button" class="btn filter-btn btn active" data-year="all">All Projects</button>
+            <button type="button" class="btn filter-btn" data-year="first">First Year</button>
+            <button type="button" class="btn filter-btn" data-year="second">Second Year</button>
+            <button type="button" class="btn filter-btn" data-year="third">Third Year</button>
+        </div>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+        <div class="project-card" data-year="third">
+            <div class="project-year">Third Year</div>
+            <h3>ECS</h3>
+            <p>ECS</p>
+            <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Express</span>
+            </div>
+        </div>
+
+        <div class="project-card" data-year="third">
+            <div class="project-year">Third Year</div>
+            <h3>Titanic</h3>
+            <p>titanic</p>
+            <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">API Integration</span>
+                <span class="tech-tag">Axios</span>
+            </div>
+        </div>
+
+        <div class="project-card" data-year="third">
+            <div class="project-year">Third Year</div>
+            <h3>BI project</h3>
+            <p>xxxxx</p>
+            <div class="project-tech">
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">Socket.io</span>
+                <span class="tech-tag">MySQL</span>
+            </div>
+
+            <div>
+                <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#tlandmodal">
+                    See More
+                </button>
+            </div>
+        </div>
+
+        <div class="modal fade" id="tlandmodal" tabindex="-1" aria-labelledby="tlandmodallLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="tlandmodalLabel">BI | BI</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="project-card" data-year="third">
+            <div class="project-year">Third Year</div>
+            <h3>Deep Learning Chatbox | Deep Learning</h3>
+            <p>This was a group project for Deep Learning. We had to create an AI Chatbox specifically for our Deep Learning class.</p>
+            <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Streamlit</span>
+            </div>
+
+            <div>
+                <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#chatboxmodal">
+                    See More
+                </button>
+            </div>
+        </div>
+
+        <div class="modal fade" id="chatboxmodal" tabindex="-1" aria-labelledby="chatboxmodalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="chatboxmodalLabel">Chatbox | Deep Learning</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-year="second">
+            <div class="project-year">Second Year</div>
+            <h3>Meminder | Project PHP</h3>
+            <p>This was a group project, I was document lead the entire project. The application for people with memory problems.
+            The idea is the "patient" has an informal carer who has access to their diary to support the primary user.
+            </p>
+            <div class="project-tech">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">Jira</span>
+            </div>
+
+            <div class="pt-2">
+                <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#memindermodal">
+                    See More
+                </button>
+            </div>
+        </div>
+
+        <div class="modal fade" id="memindermodal" tabindex="-1" aria-labelledby="memindermodalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="memindermodalLabel">Meminder | Project PHP</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-year="first">
+            <div class="project-year">First Year</div>
+            <h3>Mouse Trap | IOT</h3>
+            <p>The First year semester one, we had to create an automated mousetrap system built using an Orange Pi,
+                featuring distance sensing, automated door closure, alarm system, and LCD monitoring.</p>
+            <div class="project-tech">
+                <span class="tech-tag">Python</span>
+            </div>
+            <div>
+                <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#mousetrapmodal">See More</button>
+            </div>
+        </div>
+
+        <div class="modal fade" id="mousetrapmodal" tabindex="-1" aria-labelledby="mousetrapmodalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="mousetrapmodalLabel">Mousetrap | IOT</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+
+
+
+
+<script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+    const projectsGrid = document.getElementById('projectsGrid');
+
+    function filterProjects(selectedYear) {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+
+        // Add active class to clicked button
+        const activeButton = document.querySelector(`[data-year="${selectedYear}"]`);
+        activeButton.classList.add('active');
+
+        // Hide all projects first
+        projectCards.forEach(card => {
+            card.style.display = 'none';
+            card.classList.add('hidden');
+        });
+
+        // Show projects based on filter
+        if (selectedYear === 'all') {
+            projectCards.forEach(card => {
+                card.style.display = 'block';
+                card.classList.remove('hidden');
+                // Trigger animation
+                card.style.animation = 'none';
+                card.offsetHeight; // Trigger reflow
+                card.style.animation = 'fadeIn 0.6s ease forwards';
+            });
+        } else {
+            const filteredProjects = document.querySelectorAll(`[data-year="${selectedYear}"]`);
+            filteredProjects.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.display = 'block';
+                    card.classList.remove('hidden');
+                    // Trigger animation
+                    card.style.animation = 'none';
+                    card.offsetHeight; // Trigger reflow
+                    card.style.animation = 'fadeIn 0.6s ease forwards';
+                }, index * 100); // Stagger the animations
+            });
+        }
+
+        // Check if no projects are visible
+        setTimeout(() => {
+            const visibleProjects = document.querySelectorAll('.project-card:not(.hidden)');
+            const existingMessage = document.querySelector('.no-projects');
+
+            if (visibleProjects.length === 0 && !existingMessage) {
+                const noProjectsMsg = document.createElement('div');
+                noProjectsMsg.className = 'no-projects';
+                noProjectsMsg.textContent = 'No projects found for this year.';
+                projectsGrid.appendChild(noProjectsMsg);
+            } else if (visibleProjects.length > 0 && existingMessage) {
+                existingMessage.remove();
+            }
+        }, 100);
+    }
+
+    // Add click event listeners to filter buttons
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const selectedYear = button.getAttribute('data-year');
+            filterProjects(selectedYear);
+        });
+    });
+
+    // Initialize with all projects visible
+    filterProjects('all');
+</script>
+
+
+
+
+
+<!--<section>
     <div class="container text-center">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col">
                 <a href="projects/First Year/first-year-projects.html" class="text-decoration-none">
                     <div class="card">
@@ -93,12 +348,12 @@
             </div>
         </div>
     </div>
-</section>
+</section>-->
 
 
 
 
-<section>
+<!--<section>
 
     <div class="container py-5">
         <div class="row">
@@ -153,20 +408,20 @@
                 </div>
             </div>
 
-            <!-- Card 6 -->
-<!--            <div class="col-md-4">-->
-<!--                <div class="card shadow-lg border-0">-->
-<!--                    <img src="images/microsoft.jpg" class="card-img-top" alt="Card 6">-->
-<!--                    <div class="card-body text-center">-->
-<!--                        <h5 class="card-title">Microsft Sharepoint</h5>-->
-<!--                        <p class="card-text text-muted">Enterprise Content Services</p>-->
-<!--                        <a href="#" class="stretched-link"></a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
+            &lt;!&ndash; Card 6 &ndash;&gt;
+&lt;!&ndash;            <div class="col-md-4">&ndash;&gt;
+&lt;!&ndash;                <div class="card shadow-lg border-0">&ndash;&gt;
+&lt;!&ndash;                    <img src="images/microsoft.jpg" class="card-img-top" alt="Card 6">&ndash;&gt;
+&lt;!&ndash;                    <div class="card-body text-center">&ndash;&gt;
+&lt;!&ndash;                        <h5 class="card-title">Microsft Sharepoint</h5>&ndash;&gt;
+&lt;!&ndash;                        <p class="card-text text-muted">Enterprise Content Services</p>&ndash;&gt;
+&lt;!&ndash;                        <a href="#" class="stretched-link"></a>&ndash;&gt;
+&lt;!&ndash;                    </div>&ndash;&gt;
+&lt;!&ndash;                </div>&ndash;&gt;
+&lt;!&ndash;            </div>&ndash;&gt;
         </div>
     </div>
-</section>
+</section>-->
 
 <footer class="py-5" id="contact">
     <div class="icons-socials text-center">
