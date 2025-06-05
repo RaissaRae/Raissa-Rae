@@ -107,6 +107,11 @@ h3 span {
     width: 200px;
 }
 
+#contact {
+    color: white;
+}
+
+
 .intern-heading {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
@@ -354,7 +359,7 @@ footer {
 }
 
 footer .icons-socials i {
-    font-size: 1rem;
+    font-size: 2rem;
     color: #3E2723;
 }
 
