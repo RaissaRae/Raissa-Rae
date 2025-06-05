@@ -103,6 +103,10 @@ h3 span {
     line-height: 35px;
 }
 
+#internship img {
+    width: 200px;
+}
+
 .intern-heading {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
