@@ -118,12 +118,12 @@ h3 span {
     margin-top: 20px;
 }
 
-#internship button {
+.interbutton {
     background-color:#800020 ;
     color: white;
 }
 
-#internship button:hover {
+.interbutton:hover {
     background-color: #ffc0cb;
     color: #800020;
 }

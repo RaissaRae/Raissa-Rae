@@ -1,214 +1,80 @@
-
 import React, { useState, useRef } from "react";
 import "./App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  const inputRef = useRef(null);
-  // const resultRef = useRef(null);
-  const [result, setResult] = useState(0);
+    const inputRef = useRef(null);
+    const resultRef = useRef(null);
+    const [result, setResult] = useState(0);
 
-  function plus(e) {
-    e.preventDefault();
-    setResult((result) => result + Number(inputRef.current.value));
-  }
-
-  function minus(e) {
-    e.preventDefault();
-    const inputVal = inputRef.current.value;
-    const newResult = result - Number(inputVal);
-    setResult(newResult);
-  }
-
-  function times(e) {
-    e.preventDefault();
-    const inputVal = inputRef.current.value;
-    const newResult = result * Number(inputVal);
-    setResult(newResult);
-  }
-
-  function divide(e) {
-    e.preventDefault();
-    const inputVal = inputRef.current.value;
-    const newResult = result / Number(inputVal);
-    setResult(newResult);
-  }
-
-  function resetInput(e) {
-    e.preventDefault();
-    inputRef.current.value = 0;
-  }
-
-  function resetResult(e) {
-    e.preventDefault();
-    setResult(0);
-  }
-
-  function handleNumberClick(num) {
-    const currentVal = inputRef.current.value || "";
-    inputRef.current.value = currentVal + num;
-  }
-
-  // Additional helper functions for iOS features
-  function clearAll() {
-    setResult(0);
-    inputRef.current.value = '';
-  }
-
-  function toggleSign() {
-    const currentVal = inputRef.current.value || '';
-    if (currentVal !== '') {
-      inputRef.current.value = currentVal.startsWith('-') ?
-          currentVal.slice(1) :
-          '-' + currentVal;
+    function plus(e) {
+        e.preventDefault();
+        // const inputVal = inputRef.current.value;
+        // const newResult = result + Number(inputVal);
+        // setResult(newResult);
+        setResult((result) => result + Number(inputRef.current.value));
     }
-  }
 
-  function percent() {
-    const currentVal = inputRef.current.value || '';
-    if (currentVal !== '') {
-      inputRef.current.value = (parseFloat(currentVal) / 100).toString();
+    function minus(e) {
+        e.preventDefault();
+        const inputVal = inputRef.current.value;
+        const newResult = result - Number(inputVal);
+        setResult(newResult);
     }
-  }
 
-  function addDecimal() {
-    const currentVal = inputRef.current.value || '';
-    if (currentVal.indexOf('.') === -1) {
-      inputRef.current.value = currentVal + '.';
+    function times(e) {
+        e.preventDefault();
+        const inputVal = inputRef.current.value;
+        const newResult = result * Number(inputVal);
+        setResult(newResult);
     }
-  }
 
-  const formatNumber = (num) => {
-    if (num % 1 === 0 && num.toString().length <= 9) {
-      return num.toLocaleString();
+    function divide(e) {
+        e.preventDefault();
+        const inputVal = inputRef.current.value;
+        const newResult = result / Number(inputVal);
+        setResult(newResult);
     }
-    return parseFloat(num).toString();
-  };
 
-  return (
-      <div className="app-container">
-        <div className="calculator">
-          <div className="display">
-            <div className="result">
-              {formatNumber(result)}
+    function resetInput(e) {
+        e.preventDefault();
+        inputRef.current.value = 0;
+    }
+
+    function resetResult(e) {
+        e.preventDefault();
+        setResult(0);
+    }
+
+
+
+    return (
+        <div className="App text-center container">
+            <div className="heading">
+                <h1>Simplest Working Calculator</h1>
             </div>
-          </div>
+            <form>
+                <p ref={resultRef}>{result}</p>
+                <div className="d-flex justify-content-center mb-3">
+                    <input
+                        pattern="[0-9]"
+                        ref={inputRef}
+                        type="number"
+                        placeholder="Type a number"
+                        className="form-control w-25 text-center"
+                    />
+                </div>
 
-          <input
-              ref={inputRef}
-              type="number"
-              placeholder="0"
-              step="any"
-              className="input-field"
-          />
-
-          <div className="buttons-grid">
-            {/* First Row */}
-            <button
-                type="button"
-                onClick={clearAll}
-                className="btn btn-gray"
-            >
-              C
-            </button>
-            <button
-                type="button"
-                onClick={toggleSign}
-                className="btn btn-gray"
-            >
-              +/−
-            </button>
-            <button
-                type="button"
-                onClick={percent}
-                className="btn btn-gray"
-            >
-              %
-            </button>
-            <button
-                onClick={divide}
-                className="btn btn-blue"
-            >
-              ÷
-            </button>
-
-            {/* Number pad */}
-            {[7,8,9].map((num) => (
-                <button
-                    key={num}
-                    type="button"
-                    onClick={() => handleNumberClick(num)}
-                    className="btn btn-dark"
-                >
-                  {num}
-                </button>
-            ))}
-            <button
-                onClick={times}
-                className="btn btn-blue"
-            >
-              ×
-            </button>
-
-            {[4,5,6].map((num) => (
-                <button
-                    key={num}
-                    type="button"
-                    onClick={() => handleNumberClick(num)}
-                    className="btn btn-dark"
-                >
-                  {num}
-                </button>
-            ))}
-            <button
-                onClick={minus}
-                className="btn btn-blue"
-            >
-              −
-            </button>
-
-            {[1,2,3].map((num) => (
-                <button
-                    key={num}
-                    type="button"
-                    onClick={() => handleNumberClick(num)}
-                    className="btn btn-dark"
-                >
-                  {num}
-                </button>
-            ))}
-            <button
-                onClick={plus}
-                className="btn btn-blue"
-            >
-              +
-            </button>
-
-            {/* Bottom Row */}
-            <button
-                type="button"
-                onClick={() => handleNumberClick('0')}
-                className="btn btn-dark btn-zero"
-            >
-              0
-            </button>
-            <button
-                type="button"
-                onClick={addDecimal}
-                className="btn btn-dark"
-            >
-              .
-            </button>
-            <button
-                onClick={resetResult}
-                className="btn btn-blue"
-            >
-              =
-            </button>
-          </div>
+                <div className="d-flex flex-wrap justify-content-center gap-2">
+                    <button className="btn btn-dark" onClick={plus}>Add</button>
+                    <button className="btn btn-dark" onClick={minus}>Subtract</button>
+                    <button className="btn btn-dark" onClick={times}>Multiply</button>
+                    <button className="btn btn-dark" onClick={divide}>Divide</button>
+                    <button className="btn btn-warning" onClick={resetInput}>Reset Input</button>
+                    <button className="btn btn-warning" onClick={resetResult}>Reset Result</button>
+                </div>
+            </form>
         </div>
-      </div>
-  );
+    );
 }
 
 export default App;

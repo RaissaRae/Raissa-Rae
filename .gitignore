@@ -1,3 +1,6 @@
 
 .env
 protected/*
+
+# Local Netlify folder
+.netlify
