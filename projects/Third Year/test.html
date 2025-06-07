@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Qlik-embed Tomorrowland</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script crossorigin="anonymous" type="application/javascript"
+
+    src="https://cdn.jsdelivr.net/npm/@qlik/embed@latest/dist/qlik-embed.js"
+<!--    data-host="https://v0yyyj3lctejalx.de.qlikcloud.com" data-client-id="834f19808ce6e9d94ee9e4f2db976028"-->
+<!--    data-redirect-uri="https://535ea2a6-0874-4243-a6d9-0d38142837c1-00-3n8vettcfzdt.janeway.replit.dev/oauth_callback.html"-->
+<!--    data-auto-redirect="true" data-access-token-storage="session">-->
+    </script>
+</head>
+
+<body>
+
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Qlik Embedded</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="merch_food.html">Merchandise and Food & Beverages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparing_weekends.html">Comparing Weekends</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<h1 class="text-center uppercase mt-5">Data Driven Insights: Tomorrowland</h1>
+
+<p class="text-center main-text">
+    This interactive web application provides data-driven insights into Tomorrowland's performance, analyzing key
+    metrics for the festival. Designed for Tomorrowland management team, this analysis explores merchandise sales, food
+    &
+    beverage trends, and weekend performance to identify opportunities for growth and enhancement of the festival
+    experience.
+</p>
+
+<!-- KPI'S  -->
+<section class="card-container">
+    <div class="card embed" style="width: 18rem;">
+        <qlik-embed ui="analytics/chart" app-id="f70f4f48-4c47-4777-a3f2-abf0d9aa1aa4" object-id="CACk">
+        </qlik-embed>
+        <div class="card-body">
+            <p class="card-text text-center">Total Revenue for Merchandise and Food & Beverages.</p>
+        </div>
+    </div>
+
+    <div class="card embed" style="width: 18rem;">
+        <qlik-embed ui="analytics/chart" app-id="f70f4f48-4c47-4777-a3f2-abf0d9aa1aa4" object-id="YRCJfd">
+        </qlik-embed>
+        <div class="card-body">
+            <p class="card-text text-center">Total Profit for Merchandise and Food & Beverages.</p>
+        </div>
+    </div>
+
+    <div class="card embed" style="width: 18rem;">
+        <qlik-embed ui="analytics/chart" app-id="f70f4f48-4c47-4777-a3f2-abf0d9aa1aa4" object-id="aEmeHQE">
+        </qlik-embed>
+        <div class="card-body">
+            <p class="card-text text-center">Profit Margin for Merchandise and Food & Beverage.</p>
+        </div>
+    </div>
+</section>
+
+<p class="text-center main-text">
+    A 53.57% profit margin for Merchandise and Food & Beverage is a strong indicator of the festival's growth and
+    operational efficiency.
+    This impressive figure is particularly noteworthy considering it represents only a portion of the overall festival
+    revenue.
+</p>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
