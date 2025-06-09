@@ -354,8 +354,13 @@ h3 span {
     padding: 2rem;
 }
 
-footer {
+#contact {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: #171717;
+
 }
 
 footer .icons-socials i {
