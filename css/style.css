@@ -128,6 +128,15 @@ h3 span {
     color: #800020;
 }
 
+.projects-header a {
+    color: black;
+    text-decoration: none;
+}
+
+.projects-header a:hover {
+    color: #267a4f;
+}
+
 #projects {
     background-color: #3e2723;
     color: #f4ebd0;
