@@ -112,7 +112,7 @@ h3 span {
 }
 
 
-.intern-heading {
+.intern-heading, #mousetrapButton {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     margin-top: 20px;
