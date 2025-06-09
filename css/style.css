@@ -368,6 +368,9 @@ h3 span {
     color: white;
 }
 
+.nav-link.active {
+    border-bottom: #171717 solid 1px;
+}
 footer .icons-socials i {
     font-size: 2rem;
     color: #3E2723;

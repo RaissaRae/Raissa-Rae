@@ -40,13 +40,13 @@
                         <a class="nav-link" href="index.html#about-me">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#projects">Achievements & Projects</a>
+                        <a class="nav-link active" href="#projects-page">Achievements & Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link custom-btn" href="#contact">Contact Me</a>
+                        <a class="nav-link custom-btn" href="#contact-home">Contact Me</a>
                     </li>
 
                 </ul>
@@ -55,7 +55,7 @@
     </div>
 </nav>
 
-<div class="projects-header py-5">
+<div class="projects-header py-5" id="projects-page">
     <h6 class="text-center">PROJECTS</h6>
     <h2 class="text-center">All Projects</h2>
     <p class="text-center">These are my favourite projects from my 3-year degree and some personal ones as well.</p>
@@ -83,7 +83,7 @@
             </div>
 
             <div class="mt-2">
-                <a href="projects/Third%20Year/enterprise-content-services.html" target="_blank">
+                <a href="projects/ThirdYear/enterprise-content-services.html" target="_blank">
                     <button type="button" class="btn btn-outline-dark">
                         See More
                     </button>
@@ -100,11 +100,12 @@
             <div class="project-tech">
                 <span class="tech-tag">Excel</span>
                 <span class="tech-tag">Qlik</span>
+                <span class="tech-tag">Replit</span>
 
             </div>
 
             <div class="mt-2">
-                <a href="projects/Third%20Year/tomorrowlandDashboard.html" target="_blank">
+                <a href="projects/ThirdYear/tomorrowlandDashboard.html" target="_blank">
                     <button type="button" class="btn btn-outline-dark">
                         See More
                     </button>
@@ -112,56 +113,21 @@
             </div>
         </div>
 
-        <div class="modal fade" id="tlandmodal" tabindex="-1" aria-labelledby="tlandmodallLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="tlandmodalLabel">BI | BI</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
         <div class="project-card" data-year="third">
             <div class="project-year">Third Year</div>
             <h3>Deep Learning Chatbox | Deep Learning</h3>
-            <p>This was a group project for Deep Learning. We had to create an AI Chatbox specifically for our Deep Learning class.</p>
+            <p> The Deep Learning chatbot was a group project with two other students, Fabrice and Safwan. We had to create a chatbot for our deep learning class. I made use of it to study for my exam. </p>
             <div class="project-tech">
                 <span class="tech-tag">Python</span>
                 <span class="tech-tag">Streamlit</span>
             </div>
 
-            <div>
-                <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#chatboxmodal">
-                    See More
-                </button>
-            </div>
-        </div>
-
-        <div class="modal fade" id="chatboxmodal" tabindex="-1" aria-labelledby="chatboxmodalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="chatboxmodalLabel">Chatbox | Deep Learning</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
+            <div class="mt-2">
+                <a href="projects/ThirdYear/deep-learning-assistant.html" target="_blank">
+                    <button type="button" class="btn btn-outline-dark">
+                        See More
+                    </button>
+                </a>
             </div>
         </div>
 
@@ -171,30 +137,26 @@
         <div class="project-card" data-year="third">
             <div class="project-year">Third Year</div>
             <h3>Calculator | React Basics (Coursera)</h3>
-            <p>For our professional skills class, we had to complete a Personal Professionalisation Programme (PPP), this required students to explore disciplines outside of
-            the AI course. For my PPP, I decided to learn React.</p>
+            <p>For our professional skills class, we had to complete a Personal Professionalisation Programme (PPP); this required students to explore disciplines outside
+            the AI course. I decided to learn React.</p>
             <div class="project-tech">
                 <span class="tech-tag">React</span>
             </div>
 
             <div>
-                <a href="projects/Third%20Year/react.html">
+                <a href="projects/ThirdYear/react.html">
                     <button type="button" class="btn btn-outline-dark">
                         See More
                     </button>
                 </a>
-
             </div>
         </div>
-
-
-
 
 
         <div class="project-card" data-year="second">
             <div class="project-year">Second Year</div>
             <h3>Meminder | Project PHP</h3>
-            <p>This was a group project, I was document lead the entire project. The application for people with memory problems.
+            <p>This was a group project. The application for people with memory problems.
             The idea is the "patient" has an informal carer who has access to their diary to support the primary user.
             </p>
             <div class="project-tech">
@@ -203,30 +165,15 @@
                 <span class="tech-tag">Jira</span>
             </div>
 
-            <div class="pt-2">
-                <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#memindermodal">
-                    See More
-                </button>
+            <div class="mt-2">
+                <a href="projects/SecondYear/meminder.html" target="_blank">
+                    <button type="button" class="btn btn-outline-dark">
+                        See More
+                    </button>
+                </a>
             </div>
         </div>
 
-        <div class="modal fade" id="memindermodal" tabindex="-1" aria-labelledby="memindermodalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="memindermodalLabel">Meminder | Project PHP</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="project-card" data-year="first">
             <div class="project-year">First Year</div>
@@ -236,30 +183,15 @@
             <div class="project-tech">
                 <span class="tech-tag">Python</span>
             </div>
+
             <div>
-                <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#mousetrapmodal">See More</button>
+                <a href="projects/FirstYear/mousetrap.html" target="_blank">
+                    <button type="button" class="btn btn-outline-dark">
+                        See More
+                    </button>
+                </a>
             </div>
         </div>
-
-        <div class="modal fade" id="mousetrapmodal" tabindex="-1" aria-labelledby="mousetrapmodalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="mousetrapmodalLabel">Mousetrap | IOT</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
     </div>
 </section>
 
@@ -340,116 +272,8 @@
 
 
 
-
-
-<!--<section>
-    <div class="container text-center">
-        <div class="row align-items-center">
-            <div class="col">
-                <a href="projects/First Year/first-year-projects.html" class="text-decoration-none">
-                    <div class="card">
-                        <div class="card-body ">
-                            First year (2022–2023)
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="projects/Second%20Year/second-year-projects.html" class="text-decoration-none">
-                    <div class="card">
-                        <div class="card-body ">
-                            Second year (2023–2024)
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="projects/Third%20Year/third-year-project.html" class="text-decoration-none">
-                    <div class="card">
-                        <div class="card-body ">
-                            Third year (2024–2025)
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>-->
-
-
-
-
-<!--<section>
-
-    <div class="container py-5">
-        <div class="row">
-
-            <div class="col-md-4">
-                <div class="card shadow-lg border-0">
-                    <img src="images/pexels-canvastudio-3153207.jpg" class="card-img-top" alt="people working in a group">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Requirement Analysis</h5>
-                        <p class="card-text text-muted">Requirement Analysis</p>
-                        <a href="projects/Second%20Year/requirement-analysis.html" class="stretched-link"></a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-md-4">
-                <div class="card shadow-lg border-0">
-                    <img src="images/pexels-brunogobofoto-3854816.jpg" class="card-img-top" alt="notepads">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Meminder</h5>
-                        <p class="card-text text-muted">Project PHP</p>
-                        <a href="projects/Second%20Year/meminder.html" class="stretched-link"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row mt-4">
-
-            <div class="col-md-4">
-                <div class="card shadow-lg border-0">
-                    <img src="images/biphoto.jpg" class="card-img-top" alt="graphs on computer">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Tomorrowland Dashboard</h5>
-                        <p class="card-text text-muted">Business Intelligence</p>
-                        <a href="tomorrowlandDashboard.html" class="stretched-link"></a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-md-4">
-                <div class="card shadow-lg border-0">
-                    <img src="images/nlp.jpg" class="card-img-top" alt="computer code behind glasses">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Chatbox for Deep Learning</h5>
-                        <p class="card-text text-muted">Deep Learning</p>
-                        <a href="projects/Third%20Year/deep-learning-assistant.html" class="stretched-link"></a>
-                    </div>
-                </div>
-            </div>
-
-            &lt;!&ndash; Card 6 &ndash;&gt;
-&lt;!&ndash;            <div class="col-md-4">&ndash;&gt;
-&lt;!&ndash;                <div class="card shadow-lg border-0">&ndash;&gt;
-&lt;!&ndash;                    <img src="images/microsoft.jpg" class="card-img-top" alt="Card 6">&ndash;&gt;
-&lt;!&ndash;                    <div class="card-body text-center">&ndash;&gt;
-&lt;!&ndash;                        <h5 class="card-title">Microsft Sharepoint</h5>&ndash;&gt;
-&lt;!&ndash;                        <p class="card-text text-muted">Enterprise Content Services</p>&ndash;&gt;
-&lt;!&ndash;                        <a href="#" class="stretched-link"></a>&ndash;&gt;
-&lt;!&ndash;                    </div>&ndash;&gt;
-&lt;!&ndash;                </div>&ndash;&gt;
-&lt;!&ndash;            </div>&ndash;&gt;
-        </div>
-    </div>
-</section>-->
-
-<footer class="py-5" id="contact">
+<footer class="py-5" id="contact-home">
+    <h4 class="text-center">Let's work together</h4>
     <div class="icons-socials text-center">
         <a href="https://www.linkedin.com/in/raissa-rae-makonga/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         <a href="mailto:raissa.makonga12@gmail.com"><i class="fa-solid fa-envelope"></i></a>
