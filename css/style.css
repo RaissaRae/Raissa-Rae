@@ -372,6 +372,21 @@ h3 span {
 
 }
 
+.dynamic-footer {
+    background-color: #171717;
+    color: white;
+    height: 70px;
+
+}
+
+.dynamic-footer a {
+    color: #800020;
+}
+
+.dynamic-footer a:hover {
+    color: #f4ebd0;
+}
+
 #contact-home {
     background-color: #171717;
     color: white;
